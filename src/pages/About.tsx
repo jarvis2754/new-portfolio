@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const FloatingIcon = ({ position, children }: { position: [number, number, number]; children: React.ReactNode }) => {
+const FloatingIcon = ({ position }: { position: [number, number, number]; children: React.ReactNode }) => {
     return (
         <Float speed={2} rotationIntensity={1} floatIntensity={0.5}>
             <Sphere position={position} args={[0.3, 32, 32]}>

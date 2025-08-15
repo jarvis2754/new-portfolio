@@ -10,7 +10,7 @@ import {
   Zap
 } from "lucide-react";
 
-const SkillOrb = ({ position, color = "#8B5DFF", icon }: { 
+const SkillOrb = ({ position, color = "#8B5DFF"}: { 
   position: [number, number, number]; 
   color?: string; 
   icon?: string;

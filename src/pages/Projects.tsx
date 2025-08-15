@@ -66,7 +66,7 @@ const projects = [
     description: "Dark-themed, responsive portfolio built with smooth animations, interactive UI elements, and optimized for all devices. ",
     technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     image: "🌐",
-    github: "",
+    github: "https://github.com/jarvis2754/new-portfolio",
     live: "",
  
   },
@@ -143,7 +143,7 @@ const Projects = () => {
           initial="hidden"
           animate="visible"
         >
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}

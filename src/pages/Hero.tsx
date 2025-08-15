@@ -6,7 +6,7 @@ import { ArrowDown, Download, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import myImage from "../assets/IMG_2196[1].jpg";
 
-const FloatingIcon = ({ position, children }: { position: [number, number, number]; children: React.ReactNode }) => {
+const FloatingIcon = ({ position }: { position: [number, number, number]; children: React.ReactNode }) => {
   return (
     <Float speed={2} rotationIntensity={1} floatIntensity={0.5}>
       <mesh position={position}>
