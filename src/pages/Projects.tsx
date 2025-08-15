@@ -67,7 +67,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     image: "🌐",
     github: "https://github.com/jarvis2754/new-portfolio",
-    live: "",
+    live: "https://vignesh-pf.web.app",
  
   },
   
