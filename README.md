@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# Vignesh P Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! I am **Vignesh P**, a passionate Full Stack Developer and MCA student with a strong foundation in programming, web development, and application design.
 
-Currently, two official plugins are available:
+## 👨‍💻 About Me
+- Currently pursuing **Master of Computer Applications (MCA)** at New Prince Shri Bhavani College.  
+- Skilled in **Java, HTML, CSS, MySQL, Python, C, React.js**, and **Spring Boot**.  
+- Passionate about creating user-friendly web and mobile applications.  
+- Interested in **Machine Learning, AI, and software development projects**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Skills & Technologies
+- **Frontend:** HTML, CSS, JavaScript, React.js, Tailwind CSS  
+- **Backend:** Java, Spring Boot, Node.js  
+- **Database:** MySQL, Firebase  
+- **Tools & Others:** Git, Figma, VS Code  
 
-## Expanding the ESLint configuration
+## 📂 Projects
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Personal Portfolio Website
+- **Technologies:** HTML, CSS, JavaScript, Tailwind CSS, React.js  
+- **Description:** A responsive portfolio website showcasing my projects, skills, and contact information.  
+- **Live Demo:** [Portfolio](https://vignesh-pf.web.app)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Personal Expense Tracker
+- **Technologies:** React.js, Chart.js  
+- **Description:** A personal finance tracker that visualizes expenses through line and pie charts, including a login system.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 3. Vision-Based Fall Detection System
+- **Technologies:** Python, OpenCV, Machine Learning  
+- **Description:** A system that detects falls in real-time using a camera, without requiring additional IoT devices.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 4. Virtual Mouse using Hand Gesture Recognition
+- **Technologies:** Python, OpenCV, Mediapipe  
+- **Description:** Controls the mouse pointer using hand gestures, enabling touchless interaction with the computer.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📫 Contact Me
+- **Email:** [jaijaivignesh7@gmail.com](mailto:jaijaivignesh7@gmail.com)  
+- **LinkedIn:** [Vignesh P](https://www.linkedin.com/in/vignesh-p-46153a302)  
+- **GitHub:** [javi2754](https://github.com/javi2754)  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+*Thank you for visiting my portfolio! I am always open to collaborating on exciting projects and opportunities.*
