@@ -122,6 +122,7 @@ All colors MUST be HSL.
   .backdrop-cinematic {
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.003);
   }
 
   .bg-background {
