@@ -11,29 +11,29 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
 
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      y: 20,
-      scale: 0.98,
-    },
-    in: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-    },
-    out: {
-      opacity: 0,
-      y: -20,
-      scale: 1.02,
-    },
-  };
+  // const pageVariants = {
+  //   initial: {
+  //     opacity: 0,
+  //     y: 20,
+  //     scale: 0.98,
+  //   },
+  //   in: {
+  //     opacity: 1,
+  //     y: 0,
+  //     scale: 1,
+  //   },
+  //   out: {
+  //     opacity: 0,
+  //     y: -20,
+  //     scale: 1.02,
+  //   },
+  // };
 
-  const pageTransition = {
-    type: "tween" as const,
-    ease: "anticipate" as const,
-    duration: 0.5,
-  };
+  // const pageTransition = {
+  //   type: "tween" as const,
+  //   ease: "anticipate" as const,
+  //   duration: 0.5,
+  // };
 
   return (
     <div className="min-h-screen bg-gradient-background relative overflow-hidden">
