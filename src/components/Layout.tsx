@@ -45,14 +45,12 @@ const Layout = ({ children }: LayoutProps) => {
       
       {/* Main Content */}
       <main className="relative z-content pt-20">
-        <AnimatePresence mode="wait" initial={false}>
+        <AnimatePresence mode="wait" initial={false}>   
           <motion.div
             key={location.pathname}
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={pageTransition}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
             className="min-h-screen"
           >
             {children}
