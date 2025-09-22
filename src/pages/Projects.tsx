@@ -57,7 +57,7 @@ const projects = [
     technologies: ["React.js","Java","SpringBoot","Bootstrap"],
     image: "📊",
     github: "https://github.com/jarvis2754/DevTracker",
-    live: "",
+    live: "https://devtrackerpj.netlify.app/",
 
   },
   {
