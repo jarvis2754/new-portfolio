@@ -20,7 +20,7 @@ const Scene3D = () => {
       <ambientLight intensity={0.4} />
       <pointLight position={[10, 10, 10]} intensity={1} />
       <pointLight position={[-10, -10, -10]} intensity={0.5} color="#FF6B9D" />
-      
+
       <FloatingCard3D position={[-3, 1, 0]} color="#8B5DFF" />
       <FloatingCard3D position={[3, -1, 0]} color="#FF6B9D" />
       <FloatingCard3D position={[0, 2, -1]} color="#4FC3F7" />
@@ -42,6 +42,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Enterprise360 ERP System",
+    description: "Comprehensive ERP platform for managing HR, procurement, master data, system administration, profiles, dashboards, and generating detailed reports within an organization.",
+    technologies: ["Java", "Spring Boot", "React.js", "Tailwind", "MySQL"],
+    image: "🏢",
+    github: "https://github.com/jarvis2754/Enterprise360",
+    live: "https://enterprise360.netlify.app/"
+  },
+
+  {
+    id: 3,
     title: "Personal Expense Tracker",
     description: "Responsive expense tracking app with Firebase authentication, real-time expense management, and interactive charts for financial insights.",
     technologies: ["React.js", "Firebase", "Chart.js", "Bootstrap"],
@@ -51,30 +61,30 @@ const projects = [
 
   },
   {
-    id: 3,
+    id: 4,
     title: "Dev Tracker",
     description: "Collaborative platform for tracking development progress, managing tasks, and visualizing project milestones in real time.",
-    technologies: ["React.js","Java","SpringBoot","Bootstrap"],
+    technologies: ["React.js", "Java", "SpringBoot", "Bootstrap"],
     image: "📊",
     github: "https://github.com/jarvis2754/DevTracker",
     live: "https://devtrackerpj.netlify.app/",
 
   },
   {
-    id: 4,
+    id: 5,
     title: "Personal Portfolio Website",
     description: "Dark-themed, responsive portfolio built with smooth animations, interactive UI elements, and optimized for all devices. ",
     technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     image: "🌐",
     github: "https://github.com/jarvis2754/new-portfolio",
     live: "https://vignesh-pf.web.app",
- 
+
   },
-  
+
 ];
 
 const Projects = () => {
-  
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -100,8 +110,8 @@ const Projects = () => {
     },
   };
 
-  const isDemoPresent = (live:string)=>{
-    return live!==""
+  const isDemoPresent = (live: string) => {
+    return live !== ""
   }
 
   return (
@@ -113,31 +123,31 @@ const Projects = () => {
 
       <div className="max-w-7xl mx-auto relative z-content">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 
+          <motion.h1
             variants={itemVariants}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
             <span className="cinematic-text">Featured</span> Projects
           </motion.h1>
-          <motion.p 
+          <motion.p
             variants={itemVariants}
             className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto"
           >
             A showcase of my latest work, featuring cutting-edge technologies and innovative solutions
           </motion.p>
-          
+
           {/* Filter Buttons */}
-          
+
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
@@ -155,8 +165,8 @@ const Projects = () => {
                 <div className="text-6xl mb-4 text-center">
                   {project.image}
                 </div>
-                
-                
+
+
 
                 {/* Content */}
                 <div className="flex-1">
@@ -166,7 +176,7 @@ const Projects = () => {
                   <p className="text-muted-foreground mb-4 line-clamp-3">
                     {project.description}
                   </p>
-                  
+
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
@@ -185,16 +195,16 @@ const Projects = () => {
                   {
                     isDemoPresent(project.live) &&
                     <CinematicButton
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 group/btn"
-                    asChild
-                  >
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <Eye className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Demo
-                    </a>
-                  </CinematicButton>
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 group/btn"
+                      asChild
+                    >
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <Eye className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                        Demo
+                      </a>
+                    </CinematicButton>
                   }
                   <CinematicButton
                     variant="ghost"
@@ -214,7 +224,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
