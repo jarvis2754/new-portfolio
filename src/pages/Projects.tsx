@@ -44,9 +44,9 @@ const projects = [
     id: 2,
     title: "Enterprise360 ERP System",
     description: "Comprehensive ERP platform for managing HR, procurement, master data, system administration, profiles, dashboards, and generating detailed reports within an organization.",
-    technologies: ["Java", "Spring Boot", "React.js", "Tailwind", "MySQL"],
+    technologies: ["Java", "Spring Boot", "React.js", "Tailwind", "PostgreSQL"],
     image: "🏢",
-    github: "https://github.com/jarvis2754/Enterprise360",
+    github: "https://github.com/jarvis2754/erp-backend",
     live: "https://enterprise360.netlify.app/"
   },
 
